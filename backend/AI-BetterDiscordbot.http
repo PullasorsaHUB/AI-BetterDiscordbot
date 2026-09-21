@@ -1,0 +1,6 @@
+@AI_BetterDiscordbot_HostAddress = http://localhost:5183
+
+GET {{AI_BetterDiscordbot_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
