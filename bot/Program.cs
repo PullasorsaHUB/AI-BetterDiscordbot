@@ -8,19 +8,21 @@ using Newtonsoft.Json;
 using System.Text.Json;
 using DotNetEnv;
 using Microsoft.Extensions.Configuration;
+using Commands.Ping;
 
 
-
-
+namespace Program;
 public class Program
 {
     // Luodaan Discord Client
-    private static DiscordSocketClient _client;
+    private static DiscordSocketClient _client = null!;
     public static async Task Main()
     {
         Env.Load();
         _client = new DiscordSocketClient();
         _client.Log += Log;
+        _client.Ping += Client_Ready;
+        
 
         var token = Environment.GetEnvironmentVariable("DISCORD_TOKEN");
         Console.WriteLine($"Token pituus: {token?.Length ?? -1}");
