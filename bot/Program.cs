@@ -21,7 +21,7 @@ public class Program
         Env.Load();
         _client = new DiscordSocketClient();
         _client.Log += Log;
-        _client.Ping += Client_Ready;
+        _client.Ready += Ping.Client_Ready;
         
 
         var token = Environment.GetEnvironmentVariable("DISCORD_TOKEN");
@@ -29,6 +29,7 @@ public class Program
         await _client.LoginAsync(TokenType.Bot,token);
         await _client.StartAsync();
         
+        // Miten saan llaitettua ping funktion tänne että se sitä voi käyttää
 
         // Block this task until the program is closed.
         await Task.Delay(-1);
