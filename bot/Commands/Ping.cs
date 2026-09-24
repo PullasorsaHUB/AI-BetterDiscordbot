@@ -1,4 +1,5 @@
 using Discord;
+using Discord.Commands;
 using Discord.Net;
 using Discord.WebSocket;
 using Microsoft.VisualBasic;
@@ -9,9 +10,9 @@ using Program;
 
 namespace Commands.Ping;
 
-public class Ping
+public class Ping 
 {
-    private readonly DiscordSocketClient _client = null!;
+    private readonly DiscordSocketClient _client;
     public static async Task Client_Ready()
     {
         var _client = new DiscordSocketClient();
