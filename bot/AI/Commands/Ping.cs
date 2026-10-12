@@ -8,6 +8,10 @@ public class PingModule : ModuleBase<SocketCommandContext>
 {
     // TODO: attribuutti + metdoi joka vastaa "Pong!"
     [Command("Ping")]
+    public async Task PingAsync()
+    {
+        await ReplyAsync("Pong 🏓");
+    }
         private static async Task HandleMessage(SocketMessage rawMsg)
     {
         // TODO 1: muuta rawMsg -> SocketUserMessage (vihje: "as"-avainsana tai "is"-tarkistus)
