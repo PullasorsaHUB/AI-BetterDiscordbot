@@ -9,22 +9,31 @@ using System.Text.Json;
 using DotNetEnv;
 using Microsoft.Extensions.Configuration;
 using AIBot;
+using Discord.Commands;
+using System.Reflection;
 
 namespace Program;
 public class Program
 {
     // Luodaan Discord Client
     private static DiscordSocketClient _client = null!;
+    private static CommandService _commands;
+    private static readonly char _prefix = '!';
+    private static ulong _channelId;
     public static async Task Main()
     {
         Env.Load();
+        _channelId = ulong.Parse(Environment.GetEnvironmentVariable("TEST"));
         _client = new DiscordSocketClient(Config.Get_Config());
+        _commands = new CommandService();
 
         _client.Log += Log;
         _client.Ready += OnReady;
+        _client.MessageReceived += HandleMessage;
+        
+        await _commands.AddModulesAsync(Assembly.GetEntryAssembly(), null);
 
         var token = Environment.GetEnvironmentVariable("DISCORD_TOKEN");
-        Console.WriteLine($"Token pituus: {token?.Length ?? -1}");
         await _client.LoginAsync(TokenType.Bot,token);
         await _client.StartAsync();
         
@@ -32,6 +41,27 @@ public class Program
         await Task.Delay(-1);
     }
 
+    private static async Task HandleMessage(SocketMessage rawMsg)
+    {
+        // TODO 1: muuta rawMsg -> SocketUserMessage (vihje: "as"-avainsana tai "is"-tarkistus)
+        // TODO 2: ohita botit
+        // TODO 3: tarkista prefix. Etsi methodia HasCharPrefix, se ottaa '!' ja ref int argPos
+        // TODO 4: luo SocketCommandContext (parametrit: client ja viesti)
+        // TODO 5: _commands.ExecuteAsync(context, argPos, services)
+
+        Console.WriteLine($"Viesti: '{rawMsg.Content}' kanavalla {rawMsg.Channel.Id}");
+        if(rawMsg is not SocketUserMessage msg) return;
+        if(msg.Channel.Id != _channelId) return;
+        if(msg.Author.IsBot) return;
+
+        int argPos = 0;
+        
+        // Tässä tarkastetaan että onko viestissä meidän Prefix eli "!".
+        if(!msg.HasCharPrefix(_prefix, ref argPos)) return;
+
+        var context = new SocketCommandContext(_client, msg);
+        await _commands.ExecuteAsync(context, argPos, null);
+    }
 
     private static Task Log(LogMessage log_msg)
     {
