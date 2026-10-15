@@ -49,7 +49,6 @@ public class Program
         // TODO 4: luo SocketCommandContext (parametrit: client ja viesti)
         // TODO 5: _commands.ExecuteAsync(context, argPos, services)
 
-        Console.WriteLine($"Viesti: '{rawMsg.Content}' kanavalla {rawMsg.Channel.Id}");
         if(rawMsg is not SocketUserMessage msg) return;
         if(msg.Channel.Id != _channelId) return;
         if(msg.Author.IsBot) return;

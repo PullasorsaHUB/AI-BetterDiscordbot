@@ -7,7 +7,7 @@ class Config
     {
         var config = new DiscordSocketConfig()
         {
-            GatewayIntents = Discord.GatewayIntents.All | Discord.GatewayIntents.AllUnprivileged | Discord.GatewayIntents.MessageContent
+            GatewayIntents = Discord.GatewayIntents.AllUnprivileged | Discord.GatewayIntents.MessageContent
         };
         return config;
     }

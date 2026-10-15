@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AI-BetterDiscordbot")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7cffbfb534596a92cb9aa3a9f0f64327059998ab")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c016f6ea18a4d3382ffffebc7ca364f1e3f20eb4")]
 [assembly: System.Reflection.AssemblyProductAttribute("AI-BetterDiscordbot")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AI-BetterDiscordbot")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
