@@ -1,22 +1,22 @@
 {
-  "version": 3,
+  "version": 4,
   "targets": {
     "net10.0": {
-      "Discord.Net/3.20.1": {
+      "Discord.Net/3.20.2": {
         "type": "package",
         "dependencies": {
-          "Discord.Net.Commands": "3.20.1",
-          "Discord.Net.Core": "3.20.1",
-          "Discord.Net.Interactions": "3.20.1",
-          "Discord.Net.Rest": "3.20.1",
-          "Discord.Net.WebSocket": "3.20.1",
-          "Discord.Net.Webhook": "3.20.1"
+          "Discord.Net.Commands": "3.20.2",
+          "Discord.Net.Core": "3.20.2",
+          "Discord.Net.Interactions": "3.20.2",
+          "Discord.Net.Rest": "3.20.2",
+          "Discord.Net.WebSocket": "3.20.2",
+          "Discord.Net.Webhook": "3.20.2"
         }
       },
-      "Discord.Net.Commands/3.20.1": {
+      "Discord.Net.Commands/3.20.2": {
         "type": "package",
         "dependencies": {
-          "Discord.Net.Core": "3.20.1",
+          "Discord.Net.Core": "3.20.2",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.0"
         },
         "compile": {
@@ -30,7 +30,7 @@
           }
         }
       },
-      "Discord.Net.Core/3.20.1": {
+      "Discord.Net.Core/3.20.2": {
         "type": "package",
         "dependencies": {
           "Newtonsoft.Json": "13.0.4"
@@ -46,7 +46,7 @@
           }
         }
       },
-      "Discord.Net.Dave/3.20.1": {
+      "Discord.Net.Dave/3.20.2": {
         "type": "package",
         "compile": {
           "lib/net10.0/Discord.Net.Dave.dll": {
@@ -59,11 +59,11 @@
           }
         }
       },
-      "Discord.Net.Interactions/3.20.1": {
+      "Discord.Net.Interactions/3.20.2": {
         "type": "package",
         "dependencies": {
-          "Discord.Net.Core": "3.20.1",
-          "Discord.Net.Rest": "3.20.1",
+          "Discord.Net.Core": "3.20.2",
+          "Discord.Net.Rest": "3.20.2",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.0"
         },
         "compile": {
@@ -77,10 +77,10 @@
           }
         }
       },
-      "Discord.Net.Rest/3.20.1": {
+      "Discord.Net.Rest/3.20.2": {
         "type": "package",
         "dependencies": {
-          "Discord.Net.Core": "3.20.1"
+          "Discord.Net.Core": "3.20.2"
         },
         "compile": {
           "lib/net10.0/Discord.Net.Rest.dll": {
@@ -93,11 +93,11 @@
           }
         }
       },
-      "Discord.Net.Webhook/3.20.1": {
+      "Discord.Net.Webhook/3.20.2": {
         "type": "package",
         "dependencies": {
-          "Discord.Net.Core": "3.20.1",
-          "Discord.Net.Rest": "3.20.1"
+          "Discord.Net.Core": "3.20.2",
+          "Discord.Net.Rest": "3.20.2"
         },
         "compile": {
           "lib/net10.0/Discord.Net.Webhook.dll": {
@@ -110,12 +110,12 @@
           }
         }
       },
-      "Discord.Net.WebSocket/3.20.1": {
+      "Discord.Net.WebSocket/3.20.2": {
         "type": "package",
         "dependencies": {
-          "Discord.Net.Core": "3.20.1",
-          "Discord.Net.Dave": "3.20.1",
-          "Discord.Net.Rest": "3.20.1"
+          "Discord.Net.Core": "3.20.2",
+          "Discord.Net.Dave": "3.20.2",
+          "Discord.Net.Rest": "3.20.2"
         },
         "compile": {
           "lib/net10.0/Discord.Net.WebSocket.dll": {
@@ -252,29 +252,29 @@
     }
   },
   "libraries": {
-    "Discord.Net/3.20.1": {
-      "sha512": "w2FlsFEWtjXURyDsTvxpYhnkCxF4M04o4m5qc672bOcKvQQB+DE+HnpumaHPVzIbWAhxfT20tpHTpeR/Od41hg==",
+    "Discord.Net/3.20.2": {
+      "sha512": "G5Bj0WEEcrF6ibHoK5HcH2PFaC5BHYDlbNs4ewPD221q2NoQGCsQNHThF30s4M9wsaoejii1O7YXisiXRtgmxg==",
       "type": "package",
-      "path": "discord.net/3.20.1",
+      "path": "discord.net/3.20.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "NUGET_README.md",
         "PackageLogo.png",
-        "discord.net.3.20.1.nupkg.sha512",
+        "discord.net.3.20.2.nupkg.sha512",
         "discord.net.nuspec"
       ]
     },
-    "Discord.Net.Commands/3.20.1": {
-      "sha512": "aHBGl0DXdGr25JXnLs95J1w+d2AKV5jDSssaa7fbnqkqx4ysGropaRl2h7zmwMMf+osfGh39jzM96fSHqXKzIQ==",
+    "Discord.Net.Commands/3.20.2": {
+      "sha512": "NsRNAbqvXfGREHFbWCL+eH3v7orQehpv4kAbc2G8Vc4zxUmXYxLxCO1pcr2+qIq9s7zMUgPowJ2LMQR27FE45A==",
       "type": "package",
-      "path": "discord.net.commands/3.20.1",
+      "path": "discord.net.commands/3.20.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "NUGET_README.md",
         "PackageLogo.png",
-        "discord.net.commands.3.20.1.nupkg.sha512",
+        "discord.net.commands.3.20.2.nupkg.sha512",
         "discord.net.commands.nuspec",
         "lib/net10.0/Discord.Net.Commands.dll",
         "lib/net10.0/Discord.Net.Commands.xml",
@@ -284,16 +284,16 @@
         "lib/net9.0/Discord.Net.Commands.xml"
       ]
     },
-    "Discord.Net.Core/3.20.1": {
-      "sha512": "fgWdbTlcd2ck05OoS03UBd/7kyrgHWATV9o2mvTwReqIB2CCcVPf5Qu8BpUpr3IgGYNHeVg+9J4KnK9DznYT4Q==",
+    "Discord.Net.Core/3.20.2": {
+      "sha512": "uU1ElfPytaOMuc1PpXpYT47jg3YC/z487fVzNrF0kqt82CeINPK+DuQ9UKeX7OkPLsjQD2boScTRNnyr22UFKA==",
       "type": "package",
-      "path": "discord.net.core/3.20.1",
+      "path": "discord.net.core/3.20.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "NUGET_README.md",
         "PackageLogo.png",
-        "discord.net.core.3.20.1.nupkg.sha512",
+        "discord.net.core.3.20.2.nupkg.sha512",
         "discord.net.core.nuspec",
         "lib/net10.0/Discord.Net.Core.dll",
         "lib/net10.0/Discord.Net.Core.xml",
@@ -303,16 +303,16 @@
         "lib/net9.0/Discord.Net.Core.xml"
       ]
     },
-    "Discord.Net.Dave/3.20.1": {
-      "sha512": "fsHIhE5dRHlihOsqwe3WNjgHiS9Xgh8XJWjsuJ/R1nfiSuGFYrEopF7EFMOpIs9z2aHaGKl8GurA8HP6RHoLWg==",
+    "Discord.Net.Dave/3.20.2": {
+      "sha512": "5ifJrHweUq5Gib4lwnBIqE2x9+c0nAlcDGIa7TVzZQGzVaMJbQGqI+97cLTUvK4Z3Hk51f9d8t4wy1CyweVwPw==",
       "type": "package",
-      "path": "discord.net.dave/3.20.1",
+      "path": "discord.net.dave/3.20.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "NUGET_README.md",
         "PackageLogo.png",
-        "discord.net.dave.3.20.1.nupkg.sha512",
+        "discord.net.dave.3.20.2.nupkg.sha512",
         "discord.net.dave.nuspec",
         "lib/net10.0/Discord.Net.Dave.dll",
         "lib/net10.0/Discord.Net.Dave.xml",
@@ -322,16 +322,16 @@
         "lib/net9.0/Discord.Net.Dave.xml"
       ]
     },
-    "Discord.Net.Interactions/3.20.1": {
-      "sha512": "beNXMFsKwIW2OlCniG+QRAWvuC1bSypSktvMrhihIug02FgAlZKqcjt/EUHfOnMouOdtUXX0tY7NRKreEFIgEQ==",
+    "Discord.Net.Interactions/3.20.2": {
+      "sha512": "ASLPHCLYdIIBwjYvRoic/HFgMBwsrSLkE4DHNmk1orb3h3C+tDHw1eh00+hOfxaGEqnCbcxMon4ZZfgNYrNlVQ==",
       "type": "package",
-      "path": "discord.net.interactions/3.20.1",
+      "path": "discord.net.interactions/3.20.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "NUGET_README.md",
         "PackageLogo.png",
-        "discord.net.interactions.3.20.1.nupkg.sha512",
+        "discord.net.interactions.3.20.2.nupkg.sha512",
         "discord.net.interactions.nuspec",
         "lib/net10.0/Discord.Net.Interactions.dll",
         "lib/net10.0/Discord.Net.Interactions.xml",
@@ -341,16 +341,16 @@
         "lib/net9.0/Discord.Net.Interactions.xml"
       ]
     },
-    "Discord.Net.Rest/3.20.1": {
-      "sha512": "vAmHwdpotchmz/rPicB2BrYoU2yWmMuFJhqDv/Ywi4nelIo/O7VYzzHD82iNGm3fYnD+2m+dCcZZGGgga3A7wQ==",
+    "Discord.Net.Rest/3.20.2": {
+      "sha512": "4tOtq7qfzZd90KL2IGYKZEpSeRy89o2aW5U6ikJlEEHP5o03fXfCk3RbjIo4OmdLe1CyOUHjVXRKCsT1f1/3Ew==",
       "type": "package",
-      "path": "discord.net.rest/3.20.1",
+      "path": "discord.net.rest/3.20.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "NUGET_README.md",
         "PackageLogo.png",
-        "discord.net.rest.3.20.1.nupkg.sha512",
+        "discord.net.rest.3.20.2.nupkg.sha512",
         "discord.net.rest.nuspec",
         "lib/net10.0/Discord.Net.Rest.dll",
         "lib/net10.0/Discord.Net.Rest.xml",
@@ -360,16 +360,16 @@
         "lib/net9.0/Discord.Net.Rest.xml"
       ]
     },
-    "Discord.Net.Webhook/3.20.1": {
-      "sha512": "HZ37Guk1FMYUmur+G8K3tUQwIst7HJyTziCA7F4F9LsOvluD60YEnz53XqJH+anyFf42t0tQeJFMbaCOy3jIiQ==",
+    "Discord.Net.Webhook/3.20.2": {
+      "sha512": "TX/OKSMEnovrUYKwXv4PTRHWOGJe9nUHJjyDQS215tJzdALdyKmgLxHRoVwcBhvtU33D4LznhIA7cE3buGNyBQ==",
       "type": "package",
-      "path": "discord.net.webhook/3.20.1",
+      "path": "discord.net.webhook/3.20.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "NUGET_README.md",
         "PackageLogo.png",
-        "discord.net.webhook.3.20.1.nupkg.sha512",
+        "discord.net.webhook.3.20.2.nupkg.sha512",
         "discord.net.webhook.nuspec",
         "lib/net10.0/Discord.Net.Webhook.dll",
         "lib/net10.0/Discord.Net.Webhook.xml",
@@ -379,16 +379,16 @@
         "lib/net9.0/Discord.Net.Webhook.xml"
       ]
     },
-    "Discord.Net.WebSocket/3.20.1": {
-      "sha512": "/JwHnqfAFkEfZ8nO3dKpImGEFG+pYG9KzcGvNYuHYztMsA2r9+bdk0Y1OxncL53zaE3053wq0AtwlXe8+CDfgQ==",
+    "Discord.Net.WebSocket/3.20.2": {
+      "sha512": "d6BdoWq8XVl8o/kREMUNc+ctmtwo0POCFIGI0ZTWRDrFbhZ8g3BRZDKnV1VNiw1UtDCq3DwSEWl2Yin7G6XSCg==",
       "type": "package",
-      "path": "discord.net.websocket/3.20.1",
+      "path": "discord.net.websocket/3.20.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "NUGET_README.md",
         "PackageLogo.png",
-        "discord.net.websocket.3.20.1.nupkg.sha512",
+        "discord.net.websocket.3.20.2.nupkg.sha512",
         "discord.net.websocket.nuspec",
         "lib/net10.0/Discord.Net.WebSocket.dll",
         "lib/net10.0/Discord.Net.WebSocket.xml",
@@ -559,24 +559,24 @@
   },
   "projectFileDependencyGroups": {
     "net10.0": [
-      "Discord.Net >= 3.20.1",
+      "Discord.Net >= 3.20.2",
       "DotNetEnv >= 3.2.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\rasmu\\.nuget\\packages\\": {}
+    "/home/rasmus/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\rasmu\\Desktop\\VsCode\\Oma\\AI-BetterDiscordbot\\bot\\bot.csproj",
+      "projectUniqueName": "/home/rasmus/Omat/Projects/ai-Discordbot/AI-BetterDiscordbot/bot/bot.csproj",
       "projectName": "bot",
-      "projectPath": "C:\\Users\\rasmu\\Desktop\\VsCode\\Oma\\AI-BetterDiscordbot\\bot\\bot.csproj",
-      "packagesPath": "C:\\Users\\rasmu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\rasmu\\Desktop\\VsCode\\Oma\\AI-BetterDiscordbot\\bot\\obj\\",
+      "projectPath": "/home/rasmus/Omat/Projects/ai-Discordbot/AI-BetterDiscordbot/bot/bot.csproj",
+      "packagesPath": "/home/rasmus/.nuget/packages/",
+      "outputPath": "/home/rasmus/Omat/Projects/ai-Discordbot/AI-BetterDiscordbot/bot/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\rasmu\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/home/rasmus/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net10.0"
@@ -586,6 +586,7 @@
       },
       "frameworks": {
         "net10.0": {
+          "framework": "net10.0",
           "targetAlias": "net10.0",
           "projectReferences": {}
         }
@@ -600,15 +601,16 @@
         "auditLevel": "low",
         "auditMode": "all"
       },
-      "SdkAnalysisLevel": "10.0.200"
+      "SdkAnalysisLevel": "10.0.400"
     },
     "frameworks": {
       "net10.0": {
+        "framework": "net10.0",
         "targetAlias": "net10.0",
         "dependencies": {
           "Discord.Net": {
             "target": "Package",
-            "version": "[3.20.1, )"
+            "version": "[3.20.2, )"
           },
           "DotNetEnv": {
             "target": "Package",
@@ -631,7 +633,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.203/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "/home/rasmus/.local/share/mise/installs/dotnet/10.0.400/sdk/10.0.400/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.CSharp": "(,4.7.32767]",
           "Microsoft.VisualBasic": "(,10.4.32767]",

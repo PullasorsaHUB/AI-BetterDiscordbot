@@ -1,10 +1,17 @@
+using System.Threading.Channels;
+using Discord.Commands;
+using Discord.WebSocket;
+using Discord;
 
 
-namespace AIBot;
-class Say
+namespace AIBot.Say;
+
+public class SayModule : ModuleBase<SocketCommandContext>
 {
-    public static async Task Say_to_everybody()
+    private static DiscordSocketClient _client = null!;
+    [Command("Say")]
+    public async Task Say_to_everybody(string msg)
     {
-        
+        await ReplyAsync(msg);
     }
 }
