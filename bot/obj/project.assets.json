@@ -564,19 +564,19 @@
     ]
   },
   "packageFolders": {
-    "/home/rasmus/.nuget/packages/": {}
+    "C:\\Users\\rasmu\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/rasmus/Omat/Projects/ai-Discordbot/AI-BetterDiscordbot/bot/bot.csproj",
+      "projectUniqueName": "C:\\Users\\rasmu\\Desktop\\VsCode\\Oma\\AI-BetterDiscordbot\\bot\\bot.csproj",
       "projectName": "bot",
-      "projectPath": "/home/rasmus/Omat/Projects/ai-Discordbot/AI-BetterDiscordbot/bot/bot.csproj",
-      "packagesPath": "/home/rasmus/.nuget/packages/",
-      "outputPath": "/home/rasmus/Omat/Projects/ai-Discordbot/AI-BetterDiscordbot/bot/obj/",
+      "projectPath": "C:\\Users\\rasmu\\Desktop\\VsCode\\Oma\\AI-BetterDiscordbot\\bot\\bot.csproj",
+      "packagesPath": "C:\\Users\\rasmu\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\rasmu\\Desktop\\VsCode\\Oma\\AI-BetterDiscordbot\\bot\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/rasmus/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\rasmu\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net10.0"
@@ -633,7 +633,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/home/rasmus/.local/share/mise/installs/dotnet/10.0.400/sdk/10.0.400/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.402/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.CSharp": "(,4.7.32767]",
           "Microsoft.VisualBasic": "(,10.4.32767]",
